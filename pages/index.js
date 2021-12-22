@@ -24,23 +24,13 @@ import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 
 const Home = () => (
   <Layout>
-    <Container>
-      <Box
-        borderRadius="lg"
-        mb={6}
-        p={3}
-        textAlign="center"
-        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-      >
-        Hello, I&apos;m a full-stack developer based in Japan!
-      </Box>
-
+    <Container maxW="container.lg">
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
-            Takuya Matsuyama
+            Justin Stan
           </Heading>
-          <p>Digital Craftsman ( Artist / Developer / Designer )</p>
+          <p>Mobile Craftsman ( Developer / Designer )</p>
         </Box>
         <Box
           flexShrink={0}
@@ -49,13 +39,10 @@ const Home = () => (
           textAlign="center"
         >
           <Image
-            borderColor="whiteAlpha.800"
-            borderWidth={2}
-            borderStyle="solid"
             maxWidth="100px"
             display="inline-block"
             borderRadius="full"
-            src="/images/takuya.jpg"
+            src="/images/justin.jpg"
             alt="Profile image"
           />
         </Box>
@@ -66,16 +53,16 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          Takuya is a freelance and a full-stack developer based in Osaka with a
-          passion for building digital services/stuff he wants. He has a knack
-          for all things launching products, from planning and designing all the
-          way to solving real-life problems with code. When not online, he loves
-          hanging out with his camera. Currently, he is living off of his own
-          product called{' '}
+          Justin is a freelance developer based in Romania with a passion for
+          building handheld experiences. He has a knack for all things mobile,
+          from planning and designing all the way to solving real-life problems
+          with code. When not online, he&apos;s likely causing automotive mayhem
+          somewhere.
+          {/*Currently, he is living off of his own product called{' '}
           <NextLink href="/works/inkdrop">
             <Link>Inkdrop</Link>
           </NextLink>
-          .
+          .*/}
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works">
@@ -91,22 +78,32 @@ const Home = () => (
           Bio
         </Heading>
         <BioSection>
-          <BioYear>1984</BioYear>
-          Born in Osaka (大阪), Japan.
+          <BioYear>1995</BioYear>
+          Born in Iasi, Romania.
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Completed the Master&apos;s Program in the Graduate School of
-          Information Science at Nara Institute of Science and Technology
-          (奈良先端科学技術大学院大学情報科学研究科修士課程)
+          <BioYear>2015</BioYear>
+          Completed the Bachelor&apos;s Program in Computer Science at AIC
+          University of Iași, RO
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Worked at Yahoo! Japan (ヤフー株式会社入社)
+          <BioYear>2015 - 2016</BioYear>
+          Freelance work
         </BioSection>
         <BioSection>
-          <BioYear>2012 to present</BioYear>
-          Works as a freelance
+          <BioYear>2016 - 2017</BioYear>
+          Android Developer at Skout Deals
+        </BioSection>
+        <BioSection>
+          <BioYear>2017 - 2020</BioYear>
+          Lead Android Developer at{' '}
+          <Link href="https://www.zyper.com/" target="_blank">
+            Zyper
+          </Link>
+        </BioSection>
+        <BioSection>
+          <BioYear>2020 - present</BioYear>
+          Freelance work
         </BioSection>
       </Section>
 
@@ -115,15 +112,14 @@ const Home = () => (
           I ♥
         </Heading>
         <Paragraph>
-          Art, Music,{' '}
-          <Link href="https://illust.odoruinu.net/" target="_blank">
-            Drawing
+          Motorsports,{' '}
+          <Link
+            href="https://www.youtube.com/playlist?list=PLzffyP7DXvQat5zFGFDF5cFSFluif7AHL"
+            target="_blank"
+          >
+            Music
           </Link>
-          , Playing Drums,{' '}
-          <Link href="https://500px.com/p/craftzdog" target="_blank">
-            Photography
-          </Link>
-          , Leica, Machine Learning
+          , Reading Sci-Fi, Playing Guitar, Compose
         </Paragraph>
       </Section>
 
@@ -133,67 +129,28 @@ const Home = () => (
         </Heading>
         <List>
           <ListItem>
-            <Link href="https://github.com/craftzdog" target="_blank">
+            <Link href="https://github.com/jjjxtan" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<Icon as={IoLogoGithub} />}
               >
-                @craftzdog
+                @jjjxtan
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/inkdrop_app" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<Icon as={IoLogoTwitter} />}
-              >
-                @inkdrop_app (English)
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://twitter.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<Icon as={IoLogoTwitter} />}
-              >
-                @craftzdog (日本語)
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://instagram.com/craftzdog" target="_blank">
+            <Link href="https://instagram.com/_u/jjjstan" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<Icon as={IoLogoInstagram} />}
               >
-                @craftzdog
+                @jjjstan
               </Button>
             </Link>
           </ListItem>
         </List>
-
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            href="https://www.youtube.com/devaslife"
-            title="Dev as Life"
-            thumbnail={thumbYouTube}
-          >
-            My YouTube channel
-          </GridItem>
-          <GridItem
-            href="https://www.inkdrop.app/"
-            title="Inkdrop"
-            thumbnail={thumbInkdrop}
-          >
-            A Markdown note-taking app
-          </GridItem>
-        </SimpleGrid>
 
         <Box align="center" my={4}>
           <NextLink href="/posts">

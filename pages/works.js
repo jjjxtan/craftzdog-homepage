@@ -15,7 +15,7 @@ import thumbAmembo from '../public/images/works/amembo_eyecatch.png'
 
 const Works = () => (
   <Layout title="Works">
-    <Container>
+    <Container maxW="container.lg">
       <Heading as="h3" fontSize={20} mb={4}>
         Works
       </Heading>

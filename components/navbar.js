@@ -20,13 +20,14 @@ import { IoLogoGithub } from 'react-icons/io5'
 
 const LinkItem = ({ href, path, _target, children, ...props }) => {
   const active = path === href
-  const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
+  const inactiveColor = useColorModeValue('black', 'white')
+  const activeColor = useColorModeValue('blackAlpha.500', 'whiteAlpha.500')
   return (
     <NextLink href={href} passHref>
       <Link
         p={2}
-        bg={active ? 'grassTeal' : undefined}
-        color={active ? '#202023' : inactiveColor}
+        style={{ boxShadow: 'none' }}
+        color={active ? activeColor : inactiveColor}
         _target={_target}
         {...props}
       >
@@ -44,8 +45,8 @@ const Navbar = props => {
       position="fixed"
       as="nav"
       w="100%"
-      bg={useColorModeValue('#ffffff40', '#20202380')}
-      css={{ backdropFilter: 'blur(10px)' }}
+      bg={useColorModeValue('#f0e7db80', '#07070980')}
+      css={{ backdropFilter: 'blur(5px)' }}
       zIndex={1}
       {...props}
     >
@@ -57,7 +58,7 @@ const Navbar = props => {
         align="center"
         justify="space-between"
       >
-        <Flex align="center" mr={5}>
+        <Flex align="center" mr={5} mb={2}>
           <Heading as="h1" size="lg" letterSpacing={'tighter'}>
             <Logo />
           </Heading>
@@ -76,18 +77,6 @@ const Navbar = props => {
           </LinkItem>
           <LinkItem href="/posts" path={path}>
             Posts
-          </LinkItem>
-          <LinkItem
-            _target="_blank"
-            href="https://github.com/craftzdog/craftzdog-homepage"
-            path={path}
-            display="inline-flex"
-            alignItems="center"
-            style={{ gap: 4 }}
-            pl={2}
-          >
-            <IoLogoGithub />
-            Source
           </LinkItem>
         </Stack>
 
