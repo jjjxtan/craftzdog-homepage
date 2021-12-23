@@ -20,17 +20,16 @@ import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
 import thumbYouTube from '../public/images/links/youtube.png'
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 
 const Home = () => (
   <Layout>
-    <Container maxW="container.lg">
+    <Container maxW="container.lg" pb={6}>
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
             Justin Stan
           </Heading>
-          <p>Mobile Craftsman ( Developer / Designer )</p>
+          <p>Mobile Artisan ( Developer / Designer )</p>
         </Box>
         <Box
           flexShrink={0}
@@ -56,13 +55,8 @@ const Home = () => (
           Justin is a freelance developer based in Romania with a passion for
           building handheld experiences. He has a knack for all things mobile,
           from planning and designing all the way to solving real-life problems
-          with code. When not online, he&apos;s likely causing automotive mayhem
-          somewhere.
-          {/*Currently, he is living off of his own product called{' '}
-          <NextLink href="/works/inkdrop">
-            <Link>Inkdrop</Link>
-          </NextLink>
-          .*/}
+          with code. When not online, he&apos;s either causing vehicular mayhem
+          somewhere or cleaning his records.
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works">
@@ -119,7 +113,7 @@ const Home = () => (
           >
             Music
           </Link>
-          , Reading Sci-Fi, Playing Guitar, Compose
+           &nbsp;& Vinyl, Reading Sci-Fi, Playing Guitar, Compose
         </Paragraph>
       </Section>
 
@@ -151,14 +145,6 @@ const Home = () => (
             </Link>
           </ListItem>
         </List>
-
-        <Box align="center" my={4}>
-          <NextLink href="/posts">
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              Popular posts
-            </Button>
-          </NextLink>
-        </Box>
       </Section>
     </Container>
   </Layout>

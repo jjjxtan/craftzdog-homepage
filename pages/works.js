@@ -3,10 +3,10 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
-import thumbWalknote from '../public/images/works/walknote_eyecatch.png'
-import thumbFourPainters from '../public/images/works/the-four-painters_eyecatch.jpg'
-import thumbMenkiki from '../public/images/works/menkiki_eyecatch.png'
+import thumbZyper from '../public/images/works/zyper_eyecatch.png'
+import thumbIridisfera from '../public/images/works/iridisfera_eyecatch.png'
+import thumbBanquet from '../public/images/works/banquet_eyecatch.png'
+import thumbSkout from '../public/images/works/skoutdeals_eyecatch.png'
 import thumbModeTokyo from '../public/images/works/modetokyo_eyecatch.png'
 import thumbStyly from '../public/images/works/styly_eyecatch.png'
 import thumbPichu2 from '../public/images/works/pichu2_eyecatch.png'
@@ -22,69 +22,43 @@ const Works = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <WorkGridItem id="inkdrop" title="Inkdrop" thumbnail={thumbInkdrop}>
-            A Markdown note-taking app with 100+ plugins, cross-platform and
-            encrypted data sync support
+          <WorkGridItem id="zyper" title="Zyper" thumbnail={thumbZyper}>
+            Community app for a marketing platform
           </WorkGridItem>
         </Section>
         <Section>
-          <WorkGridItem
-            id="walknote"
-            title="walknote"
-            thumbnail={thumbWalknote}
+        <WorkGridItem
+            id="banquet"
+            title="Banquet"
+            thumbnail={thumbBanquet}
           >
-            Music recommendation app for iOS
-          </WorkGridItem>
+            Food delivery app for local chefs &amp; foodie start-ups
+        </WorkGridItem>
         </Section>
 
         <Section delay={0.1}>
           <WorkGridItem
-            id="fourpainters"
-            title="The four painters"
-            thumbnail={thumbFourPainters}
+            id="iridisfera"
+            title="Iridisfera"
+            thumbnail={thumbIridisfera}
           >
-            A video work generated with deep learning, imitating famous four
-            painters like Van Gogh
+            Wide-gamut wallpaper app for Android
           </WorkGridItem>
         </Section>
         <Section delay={0.1}>
-          <WorkGridItem id="menkiki" thumbnail={thumbMenkiki} title="Menkiki">
-            An app that suggests ramen(noodle) shops based on a given photo of
-            the ramen you want to eat
+          <WorkGridItem id="skoutdeals" thumbnail={thumbSkout} title="SkoutDeals">
+            Location-based app that helps people find nearby deals, sales and coupons
           </WorkGridItem>
         </Section>
       </SimpleGrid>
 
-      <Section delay={0.2}>
+      {
+      /*
+      <Section delay={0.3}>
         <Divider my={6} />
 
         <Heading as="h3" fontSize={20} mb={4}>
-          Collaborations
-        </Heading>
-      </Section>
-
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
-        <Section delay={0.3}>
-          <WorkGridItem
-            id="modetokyo"
-            thumbnail={thumbModeTokyo}
-            title="mode.tokyo"
-          >
-            The mode magazine for understanding to personally enjoy Japan
-          </WorkGridItem>
-        </Section>
-        <Section delay={0.3}>
-          <WorkGridItem id="styly" thumbnail={thumbStyly} title="Styly">
-            A VR Creative tools for fashion brands
-          </WorkGridItem>
-        </Section>
-      </SimpleGrid>
-
-      <Section delay={0.4}>
-        <Divider my={6} />
-
-        <Heading as="h3" fontSize={20} mb={4}>
-          Old works
+          Older work
         </Heading>
       </Section>
 
@@ -103,13 +77,10 @@ const Works = () => (
             Automatic audio file tagging tool using FreeDB for Windows
           </WorkGridItem>
         </Section>
-        <Section delay={0.6}>
-          <WorkGridItem id="amembo" thumbnail={thumbAmembo} title="Amembo">
-            P2P private file sharing tool with MSN Messenger integration for
-            Windows
-          </WorkGridItem>
-        </Section>
       </SimpleGrid>
+      */
+      }
+
     </Container>
   </Layout>
 )

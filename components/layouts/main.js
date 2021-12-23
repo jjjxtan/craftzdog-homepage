@@ -29,13 +29,17 @@ const Main = ({ children, router }) => {
         <title>Justin Stan - Home</title>
       </Head>
 
-      <Image
+      <Box
         w="full"
-        height="100%"
+        style={{
+            height: '100%',
+            width: '100%',
+            backgroundRepeat: 'repeat-y',
+            backgroundImage: 'url(/images/grid.svg)',
+            backgroundSize: 'cover'
+        }}
         position="absolute"
         opacity="0.3"
-        src="/images/grid.svg"
-        alt=""
       />
 
       <NavBar path={router.asPath} />
@@ -43,12 +47,11 @@ const Main = ({ children, router }) => {
       <iframe
         w="full"
         src="/spline/index.html"
-        style={{ position: 'absolute' }}
+        style={{ position: 'absolute', height: '75vh' }}
         width="100%"
-        height="800"
       />
 
-      <Container maxW="container.md" pt={720}>
+      <Container maxW="container.md" style={{ paddingTop: '70vh' }} >
         <Box>{children}</Box>
 
         <Footer />
