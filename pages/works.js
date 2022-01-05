@@ -7,22 +7,18 @@ import thumbZyper from '../public/images/works/zyper_eyecatch.png'
 import thumbIridisfera from '../public/images/works/iridisfera_eyecatch.png'
 import thumbBanquet from '../public/images/works/banquet_eyecatch.png'
 import thumbSkout from '../public/images/works/skoutdeals_eyecatch.png'
-import thumbModeTokyo from '../public/images/works/modetokyo_eyecatch.png'
-import thumbStyly from '../public/images/works/styly_eyecatch.png'
-import thumbPichu2 from '../public/images/works/pichu2_eyecatch.png'
-import thumbFreeDBTagger from '../public/images/works/freedbtagger_eyecatch.png'
-import thumbAmembo from '../public/images/works/amembo_eyecatch.png'
+import thumbSecret from '../public/images/works/silentsecret_eyecatch.png'
 
 const Works = () => (
   <Layout title="Works">
-    <Container maxW="container.lg">
+    <Container maxW="container.lg" mb={8}>
       <Heading as="h3" fontSize={20} mb={4}>
         Works
       </Heading>
 
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
+      <SimpleGrid columns={[1, 1, 2]} gap={8}>
         <Section>
-          <WorkGridItem id="zyper" title="Zyper" thumbnail={thumbZyper}>
+          <WorkGridItem id="zyper" title="Zyper" thumbnail={thumbZyper} type='App & Design'>
             Community app for a marketing platform
           </WorkGridItem>
         </Section>
@@ -36,7 +32,7 @@ const Works = () => (
         </WorkGridItem>
         </Section>
 
-        <Section delay={0.1}>
+        <Section delay={0.3}>
           <WorkGridItem
             id="iridisfera"
             title="Iridisfera"
@@ -45,18 +41,15 @@ const Works = () => (
             Wide-gamut wallpaper app for Android
           </WorkGridItem>
         </Section>
-        <Section delay={0.1}>
+        <Section delay={0.3}>
           <WorkGridItem id="skoutdeals" thumbnail={thumbSkout} title="SkoutDeals">
-            Location-based app that helps people find nearby deals, sales and coupons
+            Location-based deal finding app
           </WorkGridItem>
         </Section>
       </SimpleGrid>
 
-      {
-      /*
-      <Section delay={0.3}>
+      <Section delay={0.5}>
         <Divider my={6} />
-
         <Heading as="h3" fontSize={20} mb={4}>
           Older work
         </Heading>
@@ -64,22 +57,16 @@ const Works = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.5}>
-          <WorkGridItem id="pichu2" thumbnail={thumbPichu2} title="Pichu*Pichu">
-            Twitter client app for iPhone Safari
-          </WorkGridItem>
-        </Section>
-        <Section delay={0.5}>
           <WorkGridItem
-            id="freedbtagger"
-            thumbnail={thumbFreeDBTagger}
-            title="freeDBTagger"
+            id="silentsecret"
+            title="Silent Secret"
+            thumbnail={thumbSecret}
+            type='App & Landing'
           >
-            Automatic audio file tagging tool using FreeDB for Windows
+            Anonymous sharing app for Android
           </WorkGridItem>
         </Section>
       </SimpleGrid>
-      */
-      }
 
     </Container>
   </Layout>

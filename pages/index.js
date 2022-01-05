@@ -5,21 +5,17 @@ import {
   Heading,
   Box,
   Image,
-  SimpleGrid,
   Button,
   List,
   ListItem,
-  Icon,
-  useColorModeValue
+  Icon
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { GridItem } from '../components/grid-item'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
-import thumbYouTube from '../public/images/links/youtube.png'
+import { IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
 
 const Home = () => (
   <Layout>
@@ -81,22 +77,22 @@ const Home = () => (
           University of Iași, RO
         </BioSection>
         <BioSection>
-          <BioYear>2015 - 2016</BioYear>
+          <BioYear>2015 - 2017</BioYear>
           Freelance work
         </BioSection>
         <BioSection>
-          <BioYear>2016 - 2017</BioYear>
+          <BioYear>2017 - 2018</BioYear>
           Android Developer at Skout Deals
         </BioSection>
         <BioSection>
-          <BioYear>2017 - 2020</BioYear>
+          <BioYear>2018 - 2021</BioYear>
           Lead Android Developer at{' '}
           <Link href="https://www.zyper.com/" target="_blank">
             Zyper
           </Link>
         </BioSection>
         <BioSection>
-          <BioYear>2020 - present</BioYear>
+          <BioYear>2021 - present</BioYear>
           Freelance work
         </BioSection>
       </Section>

@@ -11,10 +11,10 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const Work = () => (
-  <Layout title="Banquet">
+  <Layout title="Skout Deals">
     <Container maxW="container.lg" mb={8}>
       <Title>
-        Banquet <Badge>2021</Badge>
+        Skout Deals <Badge>2017-2018</Badge>
       </Title>
       <P>
         A food ordering and delivery app for local chefs &amp; foodie start-ups.
@@ -22,8 +22,8 @@ const Work = () => (
       <List ml={4} my={4} mb={8}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://www.banqueteats.com/">
-            https://www.banqueteats.com/ <ExternalLinkIcon mx="2px" />
+          <Link href="https://web.archive.org/web/20181105073009/https://www.skoutdeals.com/">
+            https://www.skoutdeals.com/ <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
@@ -32,18 +32,17 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>App Stack</Meta>
-          <span>Dagger, RoomDB</span>
+          <span>Dagger2, RoomDB, Retrofit</span>
         </ListItem>
         <ListItem>
-          <Meta>Download</Meta>
-          <Link href="https://play.google.com/store/apps/details?id=com.banqueteats">
-            Banquet on Play Store
-            <ExternalLinkIcon mx="2px" />
+          <Meta>Twitter</Meta>
+          <Link href="https://twitter.com/skoutdeals">
+            Skout Deals on Twitter <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
       </List>
 
-      <WorkImage src="/images/works/banquet_01.png" alt="Banquet" />
+      <WorkImage src="/images/works/skout_01.png" alt="SkoutDeals" />
     </Container>
   </Layout>
 )

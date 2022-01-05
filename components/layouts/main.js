@@ -1,14 +1,18 @@
 import Head from 'next/head'
-import dynamic from 'next/dynamic'
 import NavBar from '../navbar'
-import { Box, Container, Image, useColorModeValue } from '@chakra-ui/react'
+import { Box, Container } from '@chakra-ui/react'
 import Footer from '../footer'
-import VoxelDogLoader from '../voxel-dog-loader'
 
+{
+/*
+import dynamic from 'next/dynamic'
+import VoxelDogLoader from '../voxel-dog-loader'
 const LazyVoxelDog = dynamic(() => import('../voxel-dog'), {
   ssr: false,
   loading: () => <VoxelDogLoader />
 })
+*/
+}
 
 const Main = ({ children, router }) => {
   return (
@@ -38,23 +42,30 @@ const Main = ({ children, router }) => {
             backgroundImage: 'url(/images/grid.svg)',
             backgroundSize: 'cover'
         }}
-        position="absolute"
+        position="fixed"
         opacity="0.3"
       />
 
       <NavBar path={router.asPath} />
 
-      <iframe
-        w="full"
-        src="/spline/index.html"
-        style={{ position: 'absolute', height: '75vh' }}
-        width="100%"
-      />
+      <Container maxW="container.md" pt={14}>
 
-      <Container maxW="container.md" style={{ paddingTop: '70vh' }} >
-        <Box>{children}</Box>
+        <Box
+          w="full"
+          style={{ width: '100%', display: 'flex', height: '70vh' }}
+          height={{ sm: '55vh !important' }}
+          >
+            <iframe
+              src="/spline/index.html"
+              style={{ marginLeft: 'auto', marginRight: 'auto', display: 'flex' }}
+              height="100%"
+            />
+        </Box>
 
-        <Footer />
+        {children}
+
+        <Footer/>
+
       </Container>
     </Box>
   )

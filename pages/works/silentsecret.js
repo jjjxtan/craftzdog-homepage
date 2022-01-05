@@ -11,19 +11,19 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const Work = () => (
-  <Layout title="Banquet">
+  <Layout title="Silent Secret">
     <Container maxW="container.lg" mb={8}>
       <Title>
-        Banquet <Badge>2021</Badge>
+        Silent Secret <Badge>2015</Badge>
       </Title>
       <P>
-        A food ordering and delivery app for local chefs &amp; foodie start-ups.
+        An anonymous secret-sharing app for teenagers.
       </P>
       <List ml={4} my={4} mb={8}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://www.banqueteats.com/">
-            https://www.banqueteats.com/ <ExternalLinkIcon mx="2px" />
+          <Link href="https://web.archive.org/web/20160609135827/http://www.silentsecret.com/">
+            https://www.silentsecret.com/ <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
@@ -31,19 +31,16 @@ const Work = () => (
           <span>Android</span>
         </ListItem>
         <ListItem>
-          <Meta>App Stack</Meta>
-          <span>Dagger, RoomDB</span>
-        </ListItem>
-        <ListItem>
-          <Meta>Download</Meta>
-          <Link href="https://play.google.com/store/apps/details?id=com.banqueteats">
-            Banquet on Play Store
-            <ExternalLinkIcon mx="2px" />
+          <Meta>Media</Meta>
+          <Link href="https://www.themix.org.uk/your-voices/submissions/silent-secret">
+            Article on themix.org.uk <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
       </List>
 
-      <WorkImage src="/images/works/banquet_01.png" alt="Banquet" />
+      <WorkImage src="/images/works/ss_03.png" alt="SkoutDeals" />
+      <WorkImage src="/images/works/ss_02.jpg" alt="SkoutDeals" />
+
     </Container>
   </Layout>
 )
