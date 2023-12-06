@@ -4,9 +4,9 @@ import { Box, Text, LinkBox, LinkOverlay, Badge } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
 
 const customLoader = ({ src, width, quality }) => {
-  console.log('SRC', src); // this never logs
-  return `${src}?w=${width}&q=${quality || 75}`;
-};
+  console.log('SRC', src) // this never logs
+  return `${src}?w=${width}&q=${quality || 75}`
+}
 
 export const GridItem = ({ children, href, title, thumbnail }) => (
   <Box w="100%" textAlign="center">
@@ -27,7 +27,13 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
   </Box>
 )
 
-export const WorkGridItem = ({ children, id, title, thumbnail, type = 'App' }) => (
+export const WorkGridItem = ({
+  children,
+  id,
+  title,
+  thumbnail,
+  type = 'App'
+}) => (
   <Box w="100%" textAlign="center">
     <NextLink href={`/works/${id}`}>
       <LinkBox cursor="pointer">

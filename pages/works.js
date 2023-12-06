@@ -7,6 +7,7 @@ import thumbZyper from '../public/images/works/zyper_eyecatch.png'
 import thumbIridisfera from '../public/images/works/iridisfera_eyecatch.png'
 import thumbBanquet from '../public/images/works/banquet_eyecatch.png'
 import thumbSkout from '../public/images/works/skoutdeals_eyecatch.png'
+import thumbAutoaqua from '../public/images/works/autoaqua_eyecatch.png'
 import thumbSecret from '../public/images/works/silentsecret_eyecatch.png'
 
 const Works = () => (
@@ -18,18 +19,19 @@ const Works = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={8}>
         <Section>
-          <WorkGridItem id="zyper" title="Zyper" thumbnail={thumbZyper} type='App & Design'>
+          <WorkGridItem
+            id="zyper"
+            title="Zyper"
+            thumbnail={thumbZyper}
+            type="App & Design"
+          >
             Community app for a marketing platform
           </WorkGridItem>
         </Section>
         <Section>
-        <WorkGridItem
-            id="banquet"
-            title="Banquet"
-            thumbnail={thumbBanquet}
-          >
+          <WorkGridItem id="banquet" title="Banquet" thumbnail={thumbBanquet}>
             Food delivery app for local chefs &amp; foodie start-ups
-        </WorkGridItem>
+          </WorkGridItem>
         </Section>
 
         <Section delay={0.3}>
@@ -42,7 +44,21 @@ const Works = () => (
           </WorkGridItem>
         </Section>
         <Section delay={0.3}>
-          <WorkGridItem id="skoutdeals" thumbnail={thumbSkout} title="SkoutDeals">
+          <WorkGridItem
+            id="autoaqua"
+            thumbnail={thumbAutoaqua}
+            type="Landing"
+            title="Autoaqua"
+          >
+            Landing for plastic packaging manufacturer
+          </WorkGridItem>
+        </Section>
+        <Section delay={0.4}>
+          <WorkGridItem
+            id="skoutdeals"
+            thumbnail={thumbSkout}
+            title="SkoutDeals"
+          >
             Location-based deal finding app
           </WorkGridItem>
         </Section>
@@ -61,13 +77,12 @@ const Works = () => (
             id="silentsecret"
             title="Silent Secret"
             thumbnail={thumbSecret}
-            type='App & Landing'
+            type="App & Landing"
           >
             Anonymous sharing app for Android
           </WorkGridItem>
         </Section>
       </SimpleGrid>
-
     </Container>
   </Layout>
 )

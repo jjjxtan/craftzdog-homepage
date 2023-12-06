@@ -4,7 +4,7 @@ import { Box, Container } from '@chakra-ui/react'
 import Footer from '../footer'
 
 {
-/*
+  /*
 import dynamic from 'next/dynamic'
 import VoxelDogLoader from '../voxel-dog-loader'
 const LazyVoxelDog = dynamic(() => import('../voxel-dog'), {
@@ -36,11 +36,11 @@ const Main = ({ children, router }) => {
       <Box
         w="full"
         style={{
-            height: '100%',
-            width: '100%',
-            backgroundRepeat: 'repeat-y',
-            backgroundImage: 'url(/images/grid.svg)',
-            backgroundSize: 'cover'
+          height: '100%',
+          width: '100%',
+          backgroundRepeat: 'repeat-y',
+          backgroundImage: 'url(/images/grid.svg)',
+          backgroundSize: 'cover'
         }}
         position="fixed"
         opacity="0.3"
@@ -49,23 +49,21 @@ const Main = ({ children, router }) => {
       <NavBar path={router.asPath} />
 
       <Container maxW="container.md" pt={14}>
-
         <Box
           w="full"
           style={{ width: '100%', display: 'flex', height: '70vh' }}
           height={{ sm: '55vh !important' }}
-          >
-            <iframe
-              src="/spline/index.html"
-              style={{ marginLeft: 'auto', marginRight: 'auto', display: 'flex' }}
-              height="100%"
-            />
+        >
+          <iframe
+            src="/spline/index.html"
+            style={{ marginLeft: 'auto', marginRight: 'auto', display: 'flex' }}
+            height="100%"
+          />
         </Box>
 
         {children}
 
-        <Footer/>
-
+        <Footer />
       </Container>
     </Box>
   )

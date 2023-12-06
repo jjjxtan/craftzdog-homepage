@@ -25,7 +25,9 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Justin Stan
           </Heading>
-          <p>Mobile Artisan ( Developer / Designer )</p>
+          <p>
+            <Link>{'// Mobile App Developer & Designer'}</Link>
+          </p>
         </Box>
         <Box
           flexShrink={0}
@@ -48,13 +50,14 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          Justin is a freelance developer based in Romania with a passion for
-          building handheld experiences. He has a knack for all things mobile,
+          I&apos;m a freelance developer based in Romania with a passion for
+          building handheld experiences. I have a knack for all things mobile,
           from planning and designing all the way to solving real-life problems
-          with code. When not online, he&apos;s either causing vehicular mayhem
-          somewhere or cleaning his records.
+          with code. When not online, I&apos;m either doing CAD/CAM, machining
+          aluminium, toying with Blender, listening to my records or tending to
+          my million other passions..
         </Paragraph>
-        <Box align="center" my={4}>
+        <Box align="center" mb={4} mt={8}>
           <NextLink href="/works">
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
               My portfolio
@@ -93,7 +96,7 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2021 - present</BioYear>
-          Freelance work
+          Freelance Android work + CAD/CAM & CNC Machining
         </BioSection>
       </Section>
 
@@ -109,7 +112,7 @@ const Home = () => (
           >
             Music
           </Link>
-           &nbsp;& Vinyl, Reading Sci-Fi, Playing Guitar, Compose
+          &nbsp;& Vinyl, Sci-Fi, Blender, CAD/CAM
         </Paragraph>
       </Section>
 

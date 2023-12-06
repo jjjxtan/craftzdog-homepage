@@ -1,10 +1,4 @@
-import {
-  Container,
-  Badge,
-  Link,
-  List,
-  ListItem
-} from '@chakra-ui/react'
+import { Container, Badge, Link, List, ListItem } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
@@ -17,7 +11,7 @@ const Work = () => (
         Silent Secret <Badge>2015</Badge>
       </Title>
       <P>
-        An anonymous secret-sharing app for teenagers.
+        An anonymous secret-sharing app specifically targeted towards teenagers.
       </P>
       <List ml={4} my={4} mb={8}>
         <ListItem>
@@ -40,7 +34,6 @@ const Work = () => (
 
       <WorkImage src="/images/works/ss_03.png" alt="SkoutDeals" />
       <WorkImage src="/images/works/ss_02.jpg" alt="SkoutDeals" />
-
     </Container>
   </Layout>
 )

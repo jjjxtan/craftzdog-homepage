@@ -1,10 +1,4 @@
-import {
-  Container,
-  Badge,
-  Link,
-  List,
-  ListItem
-} from '@chakra-ui/react'
+import { Container, Badge, Link, List, ListItem } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
@@ -32,7 +26,7 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>App Stack</Meta>
-          <span>Dagger, RoomDB</span>
+          <span>Dagger/Hilt, RoomDB</span>
         </ListItem>
         <ListItem>
           <Meta>Download</Meta>

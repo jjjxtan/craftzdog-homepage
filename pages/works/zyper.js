@@ -1,4 +1,13 @@
-import { Container, Badge, Link, List, ListItem, Heading, Center, UnorderedList } from '@chakra-ui/react'
+import {
+  Container,
+  Badge,
+  Link,
+  List,
+  ListItem,
+  Heading,
+  Center,
+  UnorderedList
+} from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
@@ -8,11 +17,12 @@ const Work = () => (
   <Layout title="Zyper">
     <Container maxW="container.lg">
       <Title>
-        Zyper <Badge>2017-2020</Badge>
+        Zyper <Badge>2017-2021</Badge>
       </Title>
       <P>
-        Community app for a London-based marketing platform meant to connect brands with their &quot;superfans&quot;.
-        The company was eventually acquired by Discord in December 2020.
+        Community app for a London-based marketing platform meant to connect
+        brands with their &quot;superfans&quot;. The company was eventually
+        acquired by Discord in December 2020.
       </P>
       <List ml={4} my={4}>
         <ListItem>
@@ -46,7 +56,7 @@ const Work = () => (
         <Center>Media coverage</Center>
       </Heading>
 
-      <UnorderedList my={4}  mb={8}>
+      <UnorderedList my={4} mb={8}>
         <ListItem>
           <Link href="https://www.businessinsider.com/brands-turning-to-micro-influencers-instead-of-instagram-stars-2019-4">
             <Badge mr={2}>Business Insider</Badge>

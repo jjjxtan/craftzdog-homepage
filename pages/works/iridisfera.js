@@ -1,10 +1,4 @@
-import {
-  Container,
-  Badge,
-  Link,
-  List,
-  ListItem
-} from '@chakra-ui/react'
+import { Container, Badge, Link, List, ListItem } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
@@ -17,7 +11,8 @@ const Work = () => (
         Iridisfera <Badge>2021</Badge>
       </Title>
       <P>
-        A collection of wide-gamut wallpapers for Android, built swiftly with Jetpack Compose (and its landing page).
+        A collection of wide-gamut wallpapers for Android, built swiftly with
+        Jetpack Compose (and its landing page).
       </P>
       <List ml={4} my={4} mb={8}>
         <ListItem>
